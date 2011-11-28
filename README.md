@@ -11,6 +11,6 @@ Ed Eustace, Carlos Guerrero, Cornelius Schaller
 
 * Run the commands below
 
-    cd base_directory
+    cd ${base_directory}
      
     coffee --watch --output /lib /src
