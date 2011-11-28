@@ -2,15 +2,26 @@
 <head>
   <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
   <title>Timeline-example</title>
+  <!--
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="https://raw.github.com/gskinner/EaselJS/master/lib/easel.js" type="text/javascript" charset="utf-8"></script>
-  <script src="../src/timeline-component.js" type="text/javascript" charset="utf-8"></script>
+  -->
+  <script src="../lib/jquery-1.5.1.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../lib/easel.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../lib/package.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../lib/timeline-marker.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../lib/marker.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../lib/phase.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../lib/timeline-tooltip.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../lib/timeline-component.js" type="text/javascript" charset="utf-8"></script>
+  <!--
   <script src="../src/timeline-tooltip.js" type="text/javascript" charset="utf-8"></script>
   <script src="../src/timeline-marker.js" type="text/javascript" charset="utf-8"></script>
+  -->
   <script type="text/javascript" charset="utf-8">
 
     $(document).ready(function(){
-        var timeline = new com.adobe.bumblebee.Timeline();
+        var timeline = new com.ee.timeline.Timeline();
 
         var data = { startDate : "01.01.2010", 
                     endDate: "01.01.2012", 
@@ -24,7 +35,6 @@
                     today: "01.06.2011"
                   };
         timeline.drawTimeline(data);
-
         $("#todaySubmit").click(function(){
 
           var today = $("#today").val();
@@ -74,10 +84,14 @@
    <body id="main" style="background-color: #232323;">
 
 
-      <div id="timelineHolder" style="width: 100%; height: 60px;"></div>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <h3>hello</h3>
+      <div id="timelineHolder" style="position:relative; width: 100%; height: 60px;"></div>
       
      
-    <p></p>
+      <p></p>
     <label> startDate</label>
     <input type="text" value="01.11.2010" id="startDate"></input>
     <br/>
