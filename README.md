@@ -9,8 +9,9 @@ Ed Eustace, Carlos Guerrero, Cornelius Schaller
 ### Working with the source
 * Install coffeescript
 
-* Run the commands below
+* Run the commands below    
+
 
     cd ${base_directory}
-     
+    
     coffee --watch --output /lib /src
